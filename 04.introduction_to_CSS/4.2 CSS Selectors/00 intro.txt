@@ -1,0 +1,60 @@
+There are various types of selectors in CSS 
+-------------------------------------------------------------------------------------
+1. Single tag selector 
+
+Apply to all elements that have h1 tag
+h1{
+    color : blue 
+}
+
+syntax: 
+nameoftag {
+    property : value 
+}
+-------------------------------------------------------------------------------------
+2. Class selector 
+ham har tag ko ek class attribute de denge and fir selector will 
+select all the tags having same class 
+
+
+NOTE: '.' ke baad koi space nahi aaega 
+
+.red-heading {
+    color : red
+}
+The above will select all the tags which belong to class - read-heading
+
+<h2 class = "red-heading"> Red </h2>
+<p> class = "red-heading"</p>
+<h2>Hi</h2>
+// the above will select line 27 and line 28 
+-------------------------------------------------------------------------------------
+3. Id Selector -> using '#' symbol 
+same class can be assigned to various tags 
+but one id can be assigned to one unique tag only 
+
+eg. 
+<h2 id = "main">Only I will get selected</h2>
+<h2> I wll not be selected </h2>
+#main{
+    color : red
+}
+-------------------------------------------------------------------------------------
+4. Attribute Selector 
+//select tags based upon the attribute or attribute values they have assigned to them 
+
+p[draggable]{
+    color : red 
+}
+//the above will select all <p> tags with attribute draggable
+p[draggable = "true"]{
+    color : red 
+}
+//the above will select all <p> tags with attribute draggable with value true 
+
+-------------------------------------------------------------------------------------
+5. Universal Selector - using '*'
+    -select all tags where this particular stylesheet is active
+*{
+    color : red
+}
