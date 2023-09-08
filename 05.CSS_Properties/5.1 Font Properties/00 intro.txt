@@ -1,0 +1,47 @@
+Font Properties
+
+---------------------------------------------------------------------
+1. Font Size 
+
+1 px -> 1 pixel is 1/96th of an inch -> 0.26 mm 
+1 pt -> 1 point is 1/72nd of an inch -> 0.35 mm 
+1 em -> 100 % of parent -> jo bhi parent ka size tha uska 100% i.e. same
+        2 em -> twice of parent size 
+1 rem -> 100% of root 
+         relative to the root tag not the parent tag 
+         root will normally be the html tag 
+
+1 px font size means 0.26 mm width and 0.26 mm height 
+
+We can also use named font size 
+ font-size : xx-large 
+
+---------------------------------------------------------------------
+
+2. Font Weight 
+
+font-weight : bold / normal 
+
+-> normal bold -> keywords
+-> lighter bold -> relative to parent 
+-> number -> 100 - 900 [light to bold ]
+---------------------------------------------------------------------
+
+3. Font Family 
+h1{
+    //pehela vala font agar nahi hua to second vala jisko generic font bolte hai disply hoga
+    font-family : Helvetica, sans-serif
+}
+h2{
+    //agar font name me multimple words hai 
+    //i.e. spaces hai .. so put that name inside ""
+    font-family : "Times New Roman", serif
+}
+
+We can generate custom font over fonts.google.com
+
+---------------------------------------------------------------------
+4. Text Align 
+h1{
+    text-align : center
+}
