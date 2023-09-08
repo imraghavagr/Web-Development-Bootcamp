@@ -12,10 +12,10 @@
         color : bluevoilet
     }
     ```
-2. Child 
+2. ### Child 
 
     We can use '>' (right angle bracket) in order to select a child of another selector. 
-
+ 
     ```css
     selector1 > selector2{
         color: firebrick;
@@ -26,7 +26,7 @@
     - This relationship is only one level deep. 
     The child should be direct child. 
 
-3. Descendant 
+3. ### Descendant 
 
     Descendant = Apply to a descendent of left side.
 
@@ -38,7 +38,7 @@
 
     Apply to all descendant of type selctor2 of selector1  
 
-4. Chaining Selectors 
+4. ### Chaining Selectors 
 
     Chaining = Apply to instances where all the selectors are true
 
