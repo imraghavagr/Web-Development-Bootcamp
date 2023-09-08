@@ -46,6 +46,7 @@
     selector1selector2{
         color: firebrick;
     }
+    ```
 
     eg.
 
