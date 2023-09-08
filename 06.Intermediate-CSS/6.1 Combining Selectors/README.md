@@ -60,4 +60,15 @@
     ```
     > The above means that we are looking for a h1 element with id = "title" and class = big and class = heading 
 
-    Always start with the element than chain it with id or class 
+    Always start with the element than chain it with id or class. 
+
+5. ### Combining Combiners
+
+    We can also combine various combiners that are discussed above. 
+
+    ```css
+    selector1 selector2selector3{
+        font-size: 0.5rem;
+    }
+    ```
+    > Above, we have first used descendant and than chaining. 
