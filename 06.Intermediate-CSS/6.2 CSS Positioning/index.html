@@ -4,7 +4,31 @@
 <head>
   <title>CSS Positioning Exercise</title>
   <style>
-    /* Write your code here */
+    /* internal css styling */
+
+    /* how to make a circle using CSS */
+    /*  Make a div and then we will change its border radius property*/
+    .blue-box{
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      /* relative will position it to relative to its own default position */
+      position: relative;
+      left: 200px;
+      top: 200px;
+    }
+    .red-circle{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      /* The below property will help us in changing the shape of div from square to circle */
+      border-radius: 50%;
+      /* we want to postiion this circle relative to the nearest postioned anc, for
+      that we can use absolute positioning*/
+      position: absolute;
+      top: 150px;
+      left : 250px; 
+    }
   </style>
 </head>
 
