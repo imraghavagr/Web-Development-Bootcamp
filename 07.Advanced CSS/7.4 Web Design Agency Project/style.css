@@ -6,16 +6,67 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
+.logo{
+  width: 200px;
+  height: 30px;
+}
 .main {
   flex: 1;
 }
-
+.title-image{
+  float: left;
+  height: 200px;
+  margin-right: 50px;
+}
 h1 {
   font-size: 5rem;
+  text-align: left;
 }
-
+.creative{
+  color: #191970;
+}
+.card{
+  width: 45%;
+}
+.left{
+  /* display: inline; */
+  float: left;
+}
+.right{
+  /* display: inline; */
+  float: right;
+}
 footer {
   text-align: right;
   color: midnightblue;
+}
+@media (max-width:680px){
+  .logo{
+    width: 100px;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card{
+    width: 100%;
+    display: block;
+    text-align: justify;
+  }
+  .left{
+    /* display: inline; */
+    display: block;
+    width: 100%;
+  }
+  .right{
+    /* display: inline; */
+    display: block;
+    width: 100%;
+  }
+  .title-image{
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+  }
 }
 
