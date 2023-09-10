@@ -53,16 +53,6 @@ footer {
     display: block;
     text-align: justify;
   }
-  .left{
-    /* display: inline; */
-    display: block;
-    width: 100%;
-  }
-  .right{
-    /* display: inline; */
-    display: block;
-    width: 100%;
-  }
   .title-image{
     margin-bottom: 10px;
     width: 100%;
