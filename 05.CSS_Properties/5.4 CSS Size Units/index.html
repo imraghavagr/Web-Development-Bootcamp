@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Size units</title>
+    <style>
+       *{
+            margin:0;
+            padding: 0;
+        }
+        /* .box{
+            background-color: aqua;
+            width: 50vw;
+            height: 100vh;
+        } */
+        .parent{
+            border: 1px solid black;
+            background-color: green;
+            width: 50%;
+            /* iska parent body hai .. so aadhi screen pe parent aaega */
+        }
+        .child{
+            border: 1px solid blue;
+            background-color: aqua;
+            width: 20%;
+            /* iska parent 'parent' hai .. so uski width ka 20% width */
+        }
+        .container{
+            background-color: blueviolet;
+            border: 2px dashed beige
+        } 
+        .paragraph{
+            font-size: 10em;;
+            /* parent of this <p> is body and by default font-size of body is 16px
+            So, 10em -> 160px                 */
+        }
+        .container-2{
+            font-size: 10px;
+        }
+        .box{
+            font-size: 10em;
+            /* iska parnet container-2 hai jiska font-size hai 10px
+            so, 10em means 10*10 = 100px */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+    <div class="container">
+        My name is Raghav Agarwal
+    </div>
+
+    <p class = "paragraph">Hello ji!</p>
+    <div class="container-2">
+        <div class="box">
+            How are you? 
+        </div>
+    </div>
+</body>
+</html>
