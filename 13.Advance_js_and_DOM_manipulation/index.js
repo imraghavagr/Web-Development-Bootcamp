@@ -20,12 +20,25 @@ function playAudio(letter){
     audio.play();
 }
 function handleClick(){
-    this.style.color = "white";
     var char = this.innerHTML;
     playAudio(char);    
-    this.style.color = "red";
+    addAnimation(char);
+}
+
+function addAnimation(letter){
+    var activeButtonClass = "."+letter;
+    document.querySelector(activeButtonClass).classList.add("pressed");
+    setTimeout(function(){
+        document.querySelector(activeButtonClass).classList.remove("pressed");
+    }, 150);
 }
 var buttons = document.querySelectorAll(".drum");
+
+document.addEventListener("keydown", function (event){
+    playAudio(event.key);
+    addAnimation(event.key);
+})
+
 for(var i = 0; i<buttons.length; i++){
     buttons[i].addEventListener("click", handleClick);
 }
