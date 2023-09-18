@@ -44,3 +44,13 @@ Use google cdn. (faster load rate because maybe when the user went to other goog
 </body>
 ```
 **jQuery script link is always placed just before our js script link.**
+
+
+## How Minification Works to Reduce File Size
+
+We can remove all the spaces, new line chars and comments to reduce the file size of our script, such that it can be loaded more faster. 
+
+To convert our code into minified version we can use the [minifier website](www.minifier.org)
+
+Standard version : jquery.js : Human readable
+Minified version : jquery.min.js : For the browser
