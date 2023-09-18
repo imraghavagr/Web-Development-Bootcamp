@@ -43,3 +43,4 @@ Use google cdn. (faster load rate because maybe when the user went to other goog
     <script src = "index.js"></script>
 </body>
 ```
+**jQuery script link is always placed just before our js script link.**
