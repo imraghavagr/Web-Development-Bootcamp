@@ -9,3 +9,14 @@ It is our shared code library.
 
 ## installing any npm package
 npm install <packageName1> <packageName2> ...
+
+## ECMAScript Modules (ESM)
+
+We have to ways to get node modules:
+
+1. CJS - Common JS    
+    Using require keyword 
+    
+2. ESM
+    Instead of using require we can use import keyword 
+
