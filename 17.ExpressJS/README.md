@@ -22,3 +22,24 @@ also a bunch of frameworks that we can choose e.g. node.js, django, asp.net etc
     3. Ability to add Middleware.
 
 
+## What is Backend Again? 
+
+The following things combined is called a Website Backend. 
+
+Server -> Any computer. Most cases its a big and powerful computer that is on 24/7 and is listening for any requests, looking for a particular resource, like an HTML file or css or js etc. 
+
+Application -> Written using some sort of code, and that application is running on the server computer. It could just be an index.js file 
+
+Database ->  Not necessary for a simple backend. 
+
+```
+        FrontEnt-------------------------------------------------------------- Backend
+
+   (user/client)             request via internet                [Database + Server + Application]
+   [Client Side]                    `                                        [Server Side]
+
+```
+Sometimes this whole backend is referred as a server. 
+
+- When a user types "google.com", this requests goes via internet to the google's server (computter) somewhere in the world. 
+- On this server computer, there is an application that's running and listening for this particular request and once it finds it, it will send back this homepage(maybe index.html) and all of it goes back to the client. 
