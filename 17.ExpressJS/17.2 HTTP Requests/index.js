@@ -14,6 +14,16 @@ app.get("/", (req, res) => {
     res.send("<h1>Hello World</h1>");
 });
 
+//handle different endpoints
+
+app.get("/about", (req, res) => {
+    res.send("<p>We are hitting the about endpoint</p>");
+});
+app.get("/contact", (req, res) => {
+    res.send("<p>Raghav Agarwal <br /> 6393729709</p>");
+});
+
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
