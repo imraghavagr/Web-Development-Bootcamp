@@ -21,6 +21,7 @@ app.post("/check", (req, res) => {
         res.sendFile(__dirname + "/public/secret.html");
     }
     else{
+        console.log("invalid password entered");
         res.sendFile(__dirname + "/public/index.html");
     }    
 });
