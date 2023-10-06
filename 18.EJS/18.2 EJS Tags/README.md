@@ -11,3 +11,4 @@ There are various EJS tags present:
 6. <%- include("header.ejs")%> : Insert another EJS file 
 
 ## Running JS in HTML example: 
+Check out index.js and index.ejs files for example.
