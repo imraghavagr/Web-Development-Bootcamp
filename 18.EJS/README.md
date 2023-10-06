@@ -80,4 +80,4 @@ app.post("/submit", (req, res) => {
 
 ```
 
-> Install EJS language support plugin to our vs code for syntax hylighting and autocomplete etc. 
+> Install EJS language support plugin to our vs code for syntax hylighting and autocomplete etc.
