@@ -1,30 +1,24 @@
-<!-- Step 3 Add Header -->
-
 <%- include("partials/header.ejs") %>
-    
-<div class = "heroContent">
-    <div class="addTaskInput mb-3">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Write your task here...">
-    </div>
-    
-    <div class="tasks">
-        <ul class="list-group">
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-              <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-              <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
-            </li>
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-              <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
-            </li>
-        </ul>
-    </div>
 
+<div class="box" id = "heading">
+  Today's Date
+</div>
+<div class="box">
+
+  <form class="item" action="/" method="post">
+    <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+    <button type="submit" name="list" value="OK">+</button>
+  </form>
+
+  <% if(locals.newTasksList) {%>
+    <% for(let i = 0; i<newTasksList.length; i++) {%>
+        <div class="item">
+          <input type="checkbox" />
+          <p><%= newTasksList[i] %></p>
+        </div>
+    <% }%>
+  <% } %>
+  
 </div>
 
-<!-- Step 3 Add Footer -->
 <%- include("partials/footer.ejs") %>
