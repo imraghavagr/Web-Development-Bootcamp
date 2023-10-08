@@ -1,37 +1,48 @@
-ul{
-    list-style-type: none; 
-}
 body {
-    background: #222;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-        helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-    color: white;
-}
-main {
-    position: absolute;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    width: 100%;
-    height: 100%;
+}
+header {
+    position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-  }
-header {
-    background: hotpink;
-    position: relative;
-    top: 0;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    background-color: #FF6969;
+    color: #141E46;
+    padding: 10px;
+    text-align: center;
 }
-footer {
+footer{
+    background-color: #FF6969;
+    color: #141E46;
+    text-align: center;
+    padding: 10px;
     position: absolute;
+    width: 100%;
     bottom: 0;
-    background: hotpink;
-    width: 100vw;
-    padding: 0;
+}
+main{
+    background-color: #FFF5E0;
+    color: #141E46;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+}
+.item{
+    display: flex;
+}
+.box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.item{
     margin: 0;
+}
+button{
+    border-radius: 50%;
 }
