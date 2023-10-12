@@ -17,19 +17,26 @@
   <div id="recipeContainer" class="hidden">
 
     <!-- If no recipe yet, show: -->
-    <h2>Pick your favourite taco ingredient 👆</h2>
     <!-- Else, show the recipe name e.g. <h2>Recipe name</h2>-->
 
-    <h3>Ingredients:</h3>
-    <ul id="ingredientsList">
-      <li>Protein name, protein preparation</li>
-      <li>Salsa name</li>
-      <li>Every other topping</li>
-    </ul>
+    <% if(locals.name) {%>
+        <h2><%= name%></h2>
+        <h3>Ingredients:</h3>
+      <ul id="ingredientsList">
+        <li><%= ingredients.protein.name %>, <%= ingredients.protein.preparation %></li>
+        <li><%= ingredients.salsa.name %>, <%= ingredients.salsa.spiciness %></li>
+        <li>Every other topping</li>
+        <% for(let i = 0; i<ingredients.toppings.length; i++) {%>
+          <!-- name, quantity -->
+          <li><%= ingredients.toppings[i].quantity%> of <%= ingredients.toppings[i].name%></li>
+      <% } %>
+      </ul>
 
+    <% } else { %>
+        <h2>Pick your favourite taco ingredient 👆</h2>
+    <% } %>
 
-
-  </div>
+    </div>
 </body>
 
 </html>
