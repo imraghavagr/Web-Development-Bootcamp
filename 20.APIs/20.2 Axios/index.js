@@ -16,7 +16,7 @@ app.get("/", async (req, res) => {
     const response = await axios.get(api + '/random');
     
     const result = response.data;
-    console.log(result);
+    // console.log(result);
     const data = {
       activity : result.activity, 
       type : result.type, 
@@ -37,20 +37,26 @@ function randomIndex(arr){
 
 app.post("/", async (req, res) => {
   try{
-    console.log(req.body);
+    // console.log(req.body);
     let act_type = req.body.type;
     let participants_cnt = req.body.participants;
-    if(!act_type) act_type = "";
-    if(!participants_cnt) participants_cnt = "";
+
+    // if(!act_type) act_type = "";
+    // if(!participants_cnt) participants_cnt = "";
+
     let requestURL = api + "/filter?type=" + act_type +"&participants"+"="+participants_cnt;
+
     console.log(requestURL);
+
     // Step 2: Play around with the drop downs and see what gets logged.
     // Use axios to make an API request to the /filter endpoint. Making
     // sure you're passing both the type and participants queries.
     const response = await axios.get(requestURL);    
     const result = response.data;
-    let idx = randomIndex(result);
+
+    let idx = Math.floor(Math.random() * result.length);
     console.log(idx);
+
     const data = {
       activity : result[idx].activity, 
       type : result[idx].type, 
